@@ -1,0 +1,53 @@
+{
+  "name": "@fullstackhouse/opentelemetry-js-decorator",
+  "version": "0.1.0",
+  "description": "A TypeScript decorator for OpenTelemetry tracing",
+  "author": "Full Stack House",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "opentelemetry",
+    "tracing",
+    "decorator",
+    "typescript",
+    "observability"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fullstackhouse/opentelemetry-js-decorator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fullstackhouse/opentelemetry-js-decorator/issues"
+  },
+  "homepage": "https://github.com/fullstackhouse/opentelemetry-js-decorator#readme",
+  "peerDependencies": {
+    "@opentelemetry/api": "^1.0.0"
+  },
+  "devDependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/sdk-trace-node": "^2.0.0",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
