@@ -1,6 +1,9 @@
 {
   "name": "@fullstackhouse/opentelemetry-js-decorator",
   "version": "0.1.0",
+  "engines": {
+    "node": ">=20"
+  },
   "description": "A TypeScript decorator for OpenTelemetry tracing",
   "author": "Full Stack House",
   "license": "MIT",
